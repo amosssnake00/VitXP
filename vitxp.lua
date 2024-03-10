@@ -37,7 +37,7 @@ local function condition()
             if mq.TLO.Me.XTarget(i).Aggressive() and mq.TLO.Me.XTarget(i).PctHPs() < x_floor then x_floor = mq.TLO.Me.XTarget(i).PctHPs() end
         end
     end
-    if (not mq.TLO.Me.Fellowship.Member(myname).Sharing() and ((x_floor > hp_ceil) or (not mq.TLO.Me.XTarget() == 0)) or (mq.TLO.Me.Fellowship.Member(myname).Sharing() and x_floor < hp_floor)) then 
+    if (not mq.TLO.Me.Fellowship.Member(myname).Sharing() and ((x_floor > hp_ceil) or (mq.TLO.Me.XTarget() == 0)) or (mq.TLO.Me.Fellowship.Member(myname).Sharing() and x_floor < hp_floor)) then 
         return true
     else
         return false
