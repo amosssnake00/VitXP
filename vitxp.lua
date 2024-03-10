@@ -2,7 +2,7 @@ local mq = require('mq')
 
 local hp_floor = 25
 local hp_ceil = 60
-local debug = true
+local debug = false --  less spam
 local myname = mq.TLO.Me.CleanName()
 
 local function set_vxp(state_vxp)
