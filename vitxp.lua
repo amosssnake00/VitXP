@@ -1,5 +1,5 @@
 local mq = require('mq')
-
+--blip
 local hp_floor = 25
 local hp_ceil = 60
 local debug = false --  less spam
